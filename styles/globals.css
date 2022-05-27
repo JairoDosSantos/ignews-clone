@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body, input, textarea {
+        @apply font-roboto text-white
+    }
+    body{
+       @apply bg-blackbg
+    }
+}
+
+@layer components{
+    .title{
+        @apply px-2 py-7 
+    }
+    .active{
+
+        @apply  border-b-[3px] border-orangeNews rounded-t-md text-white
+    }
+
+    .paragrafo{
+        @apply my-5 text-gray-300 text-sm
+    }
+    .listItem{
+        @apply list-disc marker:text-orangeNews my-4
+    }
+}
